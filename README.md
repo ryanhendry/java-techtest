@@ -9,8 +9,7 @@ A simple command line utility for finding anagrams in a specified file
 ```
 ### Big O analysis
 Time Complexity:
-The intention is to do a counting sort, which runs in O(n+k) time. As the range of potential characters in a word is small,
-it will generally run in 0(n) time. 
+The intention was in the main part of the algorithm is to do a counting sort, which runs in O(n+k) time. As the range of potential characters in a word is small, it will generally run in 0(n) time. I wasn't sure whether each individual list of anagrams needs to be in sorted order, but since it's required for the existing unit test, I have done so. This adds additional time complexity, I believe, of O(m*log(m)), where m is the number of anagrams in the group,
 
 Space Complexity:
 Generally to have a good time complexity, the space complexity increases and this is the case here. This may not be the optimal
